@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Playground.Project_Steps;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -98,5 +99,30 @@ namespace Project_Playground
 
         }
 
+        private void OpenWindow_Click(object sender, RoutedEventArgs e)
+        {
+            Button btnWindow = (Button)sender;
+            string btnText = btnWindow.Content.ToString();
+            string lastNumber = btnText[btnText.Length - 1].ToString();
+            
+
+            switch(lastNumber)
+            {
+                case "1":
+                    new Step_1().Show();
+                    break;
+                case "2":
+                    new Step_2().Show();
+                    break;
+                case "3":
+                    new Step_1().Show();
+                    break;
+                default:
+                    MessageBox.Show("Show Me Something");
+                    break;
+            }
+
+
+        }
     }
 }

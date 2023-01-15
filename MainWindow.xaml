@@ -12,13 +12,16 @@
             <ColumnDefinition Width="23*"/>
         </Grid.ColumnDefinitions>
         <Canvas Grid.Column="1" Background="#FFFEEACE">
-            <RichTextBox Height="399" Width="327" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="18" Canvas.Top="10">
+            <RichTextBox Height="357" Width="327" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="18" Canvas.Top="10">
                 <FlowDocument x:Name="fdDisplay">
                 </FlowDocument>
             </RichTextBox>
             <ListBox x:Name="lbBlogPosts" Height="399" Width="205" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="360" Canvas.Top="10" SelectionChanged="lbBlogPosts_SelectionChanged"/>
+            <Button x:Name="btnStep1" Content="Step 1" Canvas.Top="388" Height="33" Width="112" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="8" Click="OpenWindow_Click"/>
+            <Button x:Name="btnStep3" Content="Step 3" Canvas.Left="242" Canvas.Top="388" Height="33" Width="112" HorizontalAlignment="Left" VerticalAlignment="Center" Click="OpenWindow_Click"/>
+            <Button x:Name="btnStep2" Content="Step 2" Canvas.Left="125" Canvas.Top="388" Height="33" Width="112" HorizontalAlignment="Left" VerticalAlignment="Center" Click="OpenWindow_Click"/>
         </Canvas>
-        <Button x:Name="btnCreatePost" Content="Create Post" HorizontalAlignment="Center" Margin="0,392,0,0" VerticalAlignment="Top" Click="Button_Click" Height="32" Width="176"/>
+        <Button x:Name="btnCreatePost" Content="Create Post" HorizontalAlignment="Center" Margin="0,392,0,0" VerticalAlignment="Top" Click="OpenWindow_Click" Height="32" Width="176"/>
         <Label Content="Header" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtHeader" HorizontalAlignment="Left" Margin="12,41,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="189"/>
         <Label Content="Body" HorizontalAlignment="Left" Margin="17,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.43,0.048"/>
