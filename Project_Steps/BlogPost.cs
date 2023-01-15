@@ -20,6 +20,17 @@ namespace Project_Playground.Project_Steps
         Brush _bodyForground;
 
         // Constructor
+        public BlogPost(string header, string body)
+        {
+            SolidColorBrush defaultColor = new SolidColorBrush(Colors.Black);
+
+            _header = header;
+            _body = body;
+            _headerForeground = defaultColor;
+            _bodyForground = defaultColor;
+            _posted = DateTime.Now;
+        }
+
         public BlogPost(string header, string body, Brush headerColor, Brush bodyColor)
         {
 
@@ -55,6 +66,8 @@ namespace Project_Playground.Project_Steps
 
         }
 
+
+ 
 
         private string DateTimeFormatted()
         {

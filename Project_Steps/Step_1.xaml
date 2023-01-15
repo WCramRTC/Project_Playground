@@ -16,13 +16,17 @@
             <Label Content="Header" HorizontalAlignment="Left" Margin="27,20,0,0" VerticalAlignment="Top"/>
             <Label Content="Body" HorizontalAlignment="Left" Margin="27,90,0,0" VerticalAlignment="Top"/>
             <TextBox x:Name="txtHeader" HorizontalAlignment="Left" Margin="27,51,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="227"/>
-            <RichTextBox Margin="10,121,17,61">
+            
+            
+            <RichTextBox Margin="10,121,17,61"> <!--Don't Name This-->
                 <FlowDocument>
                     <Paragraph>
-                        <Run x:Name="runBody" Text="RichTextBox"/>
+                        <Run x:Name="runBody" Text="Body Text"/> <!--Name This-->
                     </Paragraph>
                 </FlowDocument>
             </RichTextBox>
+            
+            
             <Button x:Name="btnCreatePost" Content="Create Post" HorizontalAlignment="Left" Margin="10,384,0,0" VerticalAlignment="Top" Width="264" Height="35"  Click="btnCreatePost_Click"/>
         </Grid>
         <Grid Grid.Column="1" Background="#FFB07A7A"/>

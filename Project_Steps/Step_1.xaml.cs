@@ -26,10 +26,13 @@ namespace Project_Playground.Project_Steps
 
         private void btnCreatePost_Click(object sender, RoutedEventArgs e)
         {
-            string header = txtHeader.Text;
-            string body = runBody.Text;
+            string header = txtHeader.Text; // Get Header Text
+            string body = runBody.Text; // Get Body Run
 
+            // Create new BlogPost instance, pass in the header and body text
             BlogPost bp = new BlogPost(header, body);
+
+            // Call our post method to return a formatted post string
 
             runDisplay.Text = bp.Post();
         }

@@ -7,45 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="9*"/>
-            <ColumnDefinition Width="23*"/>
-        </Grid.ColumnDefinitions>
-        <Canvas Grid.Column="1" Background="#FFFEEACE">
-            <RichTextBox Height="357" Width="327" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="18" Canvas.Top="10">
-                <FlowDocument x:Name="fdDisplay">
-                </FlowDocument>
-            </RichTextBox>
-            <ListBox x:Name="lbBlogPosts" Height="399" Width="205" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="360" Canvas.Top="10" SelectionChanged="lbBlogPosts_SelectionChanged"/>
-            <Button x:Name="btnStep1" Content="Step 1" Canvas.Top="388" Height="33" Width="84" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="8" Click="OpenWindow_Click"/>
-            <Button x:Name="btnStep3" Content="Step 3" Canvas.Left="186" Canvas.Top="388" Height="33" Width="84" HorizontalAlignment="Left" VerticalAlignment="Center" Click="OpenWindow_Click"/>
-            <Button x:Name="btnStep2" Content="Step 2" Canvas.Left="98" Canvas.Top="388" Height="33" Width="84" HorizontalAlignment="Left" VerticalAlignment="Center" Click="OpenWindow_Click"/>
-            <Button x:Name="btnStep3_Copy" Content="Step 4" Canvas.Left="273" Canvas.Top="388" Height="33" Width="84" Click="OpenWindow_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        </Canvas>
-        <Button x:Name="btnCreatePost" Content="Create Post" HorizontalAlignment="Center" Margin="0,392,0,0" VerticalAlignment="Top" Click="OpenWindow_Click" Height="32" Width="176"/>
-        <Label Content="Header" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtHeader" HorizontalAlignment="Left" Margin="12,41,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="189"/>
-        <Label Content="Body" HorizontalAlignment="Left" Margin="17,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.43,0.048"/>
-        <RichTextBox Margin="5,90,5,163">
-            <FlowDocument>
-                <Paragraph>
-                    <Run x:Name="rtbBody" Text="RichTextBox"/>
-                </Paragraph>
-            </FlowDocument>
-        </RichTextBox>
-        <TextBox x:Name="txtR" HorizontalAlignment="Left" Margin="12,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Text="0"/>
-        <TextBox x:Name="txtG" HorizontalAlignment="Left" Margin="51,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Text="0"/>
-        <TextBox x:Name="txtB" HorizontalAlignment="Left" Margin="91,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Text="0"/>
-        <Label Content="Color" HorizontalAlignment="Left" Margin="51,272,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="R" HorizontalAlignment="Left" Margin="20,290,0,0" VerticalAlignment="Top"/>
-        <Label Content="G" HorizontalAlignment="Left" Margin="60,290,0,0" VerticalAlignment="Top"/>
-        <Label Content="B" HorizontalAlignment="Left" Margin="100,290,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnGenColor" Content="Generate Color" HorizontalAlignment="Left" Margin="12,343,0,0" VerticalAlignment="Top" Height="30" Width="113" Click="btnGenColor_Click" FontWeight="Bold"/>
-        <Button x:Name="btnHeaderColor" Content="Header" HorizontalAlignment="Left" Margin="139,292,0,0" VerticalAlignment="Top" Height="33" Width="76" Click="btnHeaderColor_Click" FontWeight="Bold"/>
-        <Button x:Name="btnBodyColor" Content="Body" HorizontalAlignment="Left" Margin="139,339,0,0" VerticalAlignment="Top" Height="33" Width="76" Click="btnBodyColor_Click"/>
-        <TextBox x:Name="txtHeaderSize" HorizontalAlignment="Left" Margin="160,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" Text="22"/>
-        <Label Content="Size" HorizontalAlignment="Left" Margin="128,10,0,0" VerticalAlignment="Top"/>
-
-
+       
     </Grid>
 </Window>
