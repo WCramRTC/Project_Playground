@@ -17,9 +17,10 @@
                 </FlowDocument>
             </RichTextBox>
             <ListBox x:Name="lbBlogPosts" Height="399" Width="205" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="360" Canvas.Top="10" SelectionChanged="lbBlogPosts_SelectionChanged"/>
-            <Button x:Name="btnStep1" Content="Step 1" Canvas.Top="388" Height="33" Width="112" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="8" Click="OpenWindow_Click"/>
-            <Button x:Name="btnStep3" Content="Step 3" Canvas.Left="242" Canvas.Top="388" Height="33" Width="112" HorizontalAlignment="Left" VerticalAlignment="Center" Click="OpenWindow_Click"/>
-            <Button x:Name="btnStep2" Content="Step 2" Canvas.Left="125" Canvas.Top="388" Height="33" Width="112" HorizontalAlignment="Left" VerticalAlignment="Center" Click="OpenWindow_Click"/>
+            <Button x:Name="btnStep1" Content="Step 1" Canvas.Top="388" Height="33" Width="84" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="8" Click="OpenWindow_Click"/>
+            <Button x:Name="btnStep3" Content="Step 3" Canvas.Left="186" Canvas.Top="388" Height="33" Width="84" HorizontalAlignment="Left" VerticalAlignment="Center" Click="OpenWindow_Click"/>
+            <Button x:Name="btnStep2" Content="Step 2" Canvas.Left="98" Canvas.Top="388" Height="33" Width="84" HorizontalAlignment="Left" VerticalAlignment="Center" Click="OpenWindow_Click"/>
+            <Button x:Name="btnStep3_Copy" Content="Step 4" Canvas.Left="273" Canvas.Top="388" Height="33" Width="84" Click="OpenWindow_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </Canvas>
         <Button x:Name="btnCreatePost" Content="Create Post" HorizontalAlignment="Center" Margin="0,392,0,0" VerticalAlignment="Top" Click="OpenWindow_Click" Height="32" Width="176"/>
         <Label Content="Header" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top"/>

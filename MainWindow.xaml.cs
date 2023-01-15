@@ -115,7 +115,10 @@ namespace Project_Playground
                     new Step_2().Show();
                     break;
                 case "3":
-                    new Step_1().Show();
+                    new Step_3().Show();
+                    break;
+                case "4":
+                    new Step_4().Show();
                     break;
                 default:
                     MessageBox.Show("Show Me Something");
