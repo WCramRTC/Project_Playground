@@ -16,22 +16,28 @@ namespace Project_Playground.Project_Steps
         string _header; // Holds Header value
         string _body; // Holds Body value
         DateTime _posted; // Holds time post was created
+        Brush _headerForeground;
+        Brush _bodyForground;
 
         // Constructor
-        public BlogPost(string header, string body)
+        public BlogPost(string header, string body, Brush headerColor, Brush bodyColor)
         {
+
             _header = header;
             _body = body;
+            _headerForeground = headerColor;
+            _bodyForground = bodyColor;
             _posted = DateTime.Now;
         }
 
+        // Properties
         public string Header { get => _header; set => _header = value; }  
 
         public string Body { get => _body; set => _body = value; }
 
         public DateTime Posted { get => _posted; }
 
-
+        // Methods
         public string Post()
         {
 
@@ -49,29 +55,6 @@ namespace Project_Playground.Project_Steps
 
         }
 
-
-        Brush _headerForeground;
-        Brush _bodyForground;
-        public BlogPost(string header, string body)
-        {
-            Brush defaultColor = Brushes.Black;
-
-            _header = header;
-            _body = body;
-            _headerForeground = defaultColor;
-            _bodyForground = defaultColor;
-            _posted = DateTime.Now;
-        }
-
-        public BlogPost(string header, string body, Brush headerColor, Brush bodyColor)
-        {
-
-            _header = header;
-            _body = body;
-            _headerForeground = headerColor;
-            _bodyForground = bodyColor;
-            _posted = DateTime.Now;
-        }
 
         private string DateTimeFormatted()
         {
